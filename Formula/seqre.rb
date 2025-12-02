@@ -5,21 +5,21 @@
 class Seqre < Formula
   desc "Self-hostable collection of everyday utilities - URL shortening, IP lookup, and secret sharing"
   homepage "https://github.com/piheta/seq.re"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/piheta/seq.re/releases/download/v0.3.1/seq.re_0.3.1_darwin_amd64.tar.gz"
-      sha256 "f6e577bb5095271b4f3d71d8be2f2216b74c2bb2d14de1bdaad62d848cfa7b2e"
+      url "https://github.com/piheta/seq.re/releases/download/v0.4.0/seq.re_0.4.0_darwin_amd64.tar.gz"
+      sha256 "003a336bfeccc557060affaab9ac8aa2aae70b891c44e9bc9051d52fe47261c0"
 
       def install
         bin.install "seqre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/piheta/seq.re/releases/download/v0.3.1/seq.re_0.3.1_darwin_arm64.tar.gz"
-      sha256 "8effa92f7d8ce7b1be579f1f388ba04421fa9b9db0e7f1b2801c63f26f1bfc17"
+      url "https://github.com/piheta/seq.re/releases/download/v0.4.0/seq.re_0.4.0_darwin_arm64.tar.gz"
+      sha256 "e258cddf181f09ba88427a6c45662c9af20005531668bb4b3c71a0ccf1e99941"
 
       def install
         bin.install "seqre"
@@ -29,15 +29,15 @@ class Seqre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/piheta/seq.re/releases/download/v0.3.1/seq.re_0.3.1_linux_amd64.tar.gz"
-      sha256 "f93617a12bf87f98fef658bc9db56b0ea0df60d5f2c03fe10633f351b750e5d2"
+      url "https://github.com/piheta/seq.re/releases/download/v0.4.0/seq.re_0.4.0_linux_amd64.tar.gz"
+      sha256 "23785ec305267db2ee7c11712766c2f73617f1ac38e4419390a8d9074b419745"
       def install
         bin.install "seqre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/piheta/seq.re/releases/download/v0.3.1/seq.re_0.3.1_linux_arm64.tar.gz"
-      sha256 "7262a73cc076d1715aed7be609142e1d2211f7e7b348e5f43170ab4cb58af082"
+      url "https://github.com/piheta/seq.re/releases/download/v0.4.0/seq.re_0.4.0_linux_arm64.tar.gz"
+      sha256 "61e056189b99cafdf08339b19ffbb68d99f0be378799ff37bc188d68e94abed5"
       def install
         bin.install "seqre"
       end
