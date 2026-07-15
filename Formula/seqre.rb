@@ -5,21 +5,21 @@
 class Seqre < Formula
   desc "Self-hostable collection of everyday utilities - URL shortening, IP lookup, and secret sharing"
   homepage "https://github.com/piheta/seq.re"
-  version "0.9.20"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/piheta/seq.re/releases/download/v0.9.20/seq.re_0.9.20_darwin_amd64.tar.gz"
-      sha256 "385b79cea697bce81fc26d4ff082b2d38a0a830efaa65f8f80bc8c4b9d3f644c"
+      url "https://github.com/piheta/seq.re/releases/download/v0.10.0/seq.re_0.10.0_darwin_amd64.tar.gz"
+      sha256 "ef2aa56e700b83486e19f518d24d5e9aae15a88bd090bdcf3c3e93e71a8588db"
 
       define_method(:install) do
         bin.install "seqre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/piheta/seq.re/releases/download/v0.9.20/seq.re_0.9.20_darwin_arm64.tar.gz"
-      sha256 "440a8c69ab923274a5c041014bb6ce932769a99794ff9a24a18f6a70cb6c7454"
+      url "https://github.com/piheta/seq.re/releases/download/v0.10.0/seq.re_0.10.0_darwin_arm64.tar.gz"
+      sha256 "a5be2eb3fcb77b8e32b87521c4b1694668c38c1edfaa0fa66eed899b88ff2486"
 
       define_method(:install) do
         bin.install "seqre"
@@ -29,15 +29,15 @@ class Seqre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/piheta/seq.re/releases/download/v0.9.20/seq.re_0.9.20_linux_amd64.tar.gz"
-      sha256 "52db67dc317cca4866fdb4709490ed8584fc3955b631f4e80e998f33729287e2"
+      url "https://github.com/piheta/seq.re/releases/download/v0.10.0/seq.re_0.10.0_linux_amd64.tar.gz"
+      sha256 "d4801ce73c7fe90f94fd1714ea8b893310e3b5a42d5c5e1912ececa28e19d356"
       define_method(:install) do
         bin.install "seqre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/piheta/seq.re/releases/download/v0.9.20/seq.re_0.9.20_linux_arm64.tar.gz"
-      sha256 "c1033084a110c110fafc0f2f992a21bf9c39279a2ecc4f604ac375e588043c05"
+      url "https://github.com/piheta/seq.re/releases/download/v0.10.0/seq.re_0.10.0_linux_arm64.tar.gz"
+      sha256 "15f759ea4d974362a5d1f05ec71df761d620968e55f5a12670b71e6d09667f1a"
       define_method(:install) do
         bin.install "seqre"
       end
